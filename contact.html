@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Rams Academy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Rams Academy Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Programs</a></li>
+        <li><a href="enquiry.html">Get Involved</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you!</p>
+  </section>
+
+  <section class="content contact-content">
+    <form id="contactForm" class="contact-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="type">Type of Message:</label>
+      <select id="type" name="type" required>
+        <option value="">Select Type</option>
+        <option value="General">General</option>
+        <option value="Feedback">Feedback</option>
+        <option value="Support">Support</option>
+      </select>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <h2>Our Location</h2>
+    <div id="map" style="height: 300px; border-radius: 10px; margin-top: 10px;"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rams Football Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
